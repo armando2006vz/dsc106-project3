@@ -40,6 +40,93 @@
       <input id="year" type="range" min="1850" max="2100" step="1" value="2025">
       <div class="endpoints"><span>1850</span><span>2100</span></div>
     </section>
+    
+<section id="writeup">
+  <h2>Project Write-Up</h2>
+
+  <h3>Rationale</h3>
+
+  <p>
+    Our goal was to make it easy to explore how temperatures across
+    California could change over time under different greenhouse gas
+    emissions scenarios. We chose an interactive geographic heatmap
+    because it allows users to see not only how temperatures change
+    over time, but also how those changes vary across different
+    parts of the state.
+  </p>
+
+  <p>
+    We represent annual average temperature using color. Each grid
+    cell is colored according to its temperature, with lighter yellow
+    colors representing lower temperatures and darker orange and red
+    colors representing higher temperatures. This encoding makes
+    spatial temperature differences easy to recognize at a glance.
+    We also included a color legend.
+  </p>
+
+  <p>
+    We chose a geographic map rather than a traditional line chart
+    because our main goal was to show the spatial distribution of
+    temperature across California. A line chart would be useful for
+    comparing temperature trends over time, but it would not
+    communicate geographic differences as directly.
+  </p>
+
+  <p>
+    We included two main interactive controls: an emissions scenario
+    dropdown and a year slider. The dropdown allows users to switch
+    between the low-emissions SSP1-2.6 and high-emissions SSP5-8.5
+    scenarios. The slider lets users explore temperatures from the
+    historical period through 2100. When either control changes,
+    the map updates to display the corresponding temperatures.
+    Users can also hover over or tap individual grid cells to see
+    the cell's approximate coordinates and exact annual average
+    temperature.
+  </p>
+
+  <h3>Development Process</h3>
+
+  <p>
+    We developed the application using HTML, CSS, JavaScript, and
+    D3.js. The application is divided into several files, with HTML
+    providing the page structure, CSS controlling the layout and
+    appearance, and D3.js handling the map rendering, data
+    visualization, and interactions.
+  </p>
+
+  <p>
+    The data preparation process was implemented separately
+    in Python.
+  </p>
+
+  <h3>Team Contributions</h3>
+
+  <ul>
+    <li>
+      <strong>Ashwin:</strong> Retrieving the data and working on
+      the D3.js visualization.
+    </li>
+    <li>
+      <strong>Hitarth:</strong> Working on the D3.js visualization
+      and HTML structure.
+    </li>
+    <li>
+      <strong>Armando:</strong> Working on the D3.js visualization
+      and CSS styling.
+    </li>
+  </ul>
+
+  <h3>Development Time and Resources</h3>
+
+  <p>
+    We spent approximately 10 total person-hours developing the
+    application. The most time-consuming part was implementing the
+    interactive elements of the D3.js visualization. We consulted
+    online documentation and used large language models (LLMs)
+    to help resolve questions during development.
+  </p>
+</section>
+
     <footer>CMIP6 · GFDL-ESM4 · Annual mean temperature (°C)</footer>
   </main>
 </body>
