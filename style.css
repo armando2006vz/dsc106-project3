@@ -51,3 +51,40 @@ footer { margin-top: 16px; color: #718089; font-size: 11px; text-align: center; 
   select { width: 100%; }
   #map { margin-top: 5px; }
 }
+
+/* Project Write-Up */
+
+#writeup {
+  max-width: 800px;
+  margin: 60px auto 40px;
+  padding: 30px;
+  line-height: 1.8;
+  text-align: left;
+}
+
+#writeup h2 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 12px;
+}
+
+#writeup h3 {
+  font-size: 1.3rem;
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+
+#writeup p {
+  margin-bottom: 18px;
+}
+
+#writeup ul {
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+
+#writeup li {
+  margin-bottom: 10px;
+}
+
