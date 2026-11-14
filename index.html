@@ -84,47 +84,80 @@
     temperature.
   </p>
 
-  <h3>Development Process</h3>
+ 
+<h3>Development Process</h3>
 
-  <p>
-    We developed the application using HTML, CSS, JavaScript, and
-    D3.js. The application is divided into several files, with HTML
-    providing the page structure, CSS controlling the layout and
-    appearance, and D3.js handling the map rendering, data
-    visualization, and interactions.
-  </p>
+<p>
+  We developed our application using HTML, CSS, JavaScript, and D3.js,
+  with Python used separately for data preparation. We divided the
+  application into multiple files to keep the code organized and
+  make it easier to work on different parts of the project.
+</p>
 
-  <p>
-    The data preparation process was implemented separately
-    in Python.
-  </p>
+<p>
+  HTML was used to establish the structure of the webpage, including
+  the map container, emissions scenario dropdown, year slider, and
+  other interface elements. CSS was used to style the webpage and
+  make the visualization easier to navigate. JavaScript and D3.js
+  were responsible for creating the geographic heatmap, mapping
+  temperature values to colors, and implementing the interactive
+  features. In particular, D3.js allowed us to dynamically update
+  the map as users changed the selected year or emissions scenario.
+</p>
 
-  <h3>Team Contributions</h3>
+<p>
+  The data preparation process was implemented separately in Python.
+  We retrieved monthly temperature data from the CMIP6 dataset using
+  the GFDL-ESM4 climate model for the historical period and two
+  future emissions scenarios. We processed the monthly measurements
+  into annual average temperatures, converted the values from Kelvin
+  to Celsius, and accounted for differences in the number of days
+  in each month when calculating the averages.
+</p>
 
-  <ul>
-    <li>
-      <strong>Ashwin:</strong> Retrieving the data and working on
-      the D3.js visualization.
-    </li>
-    <li>
-      <strong>Hitarth:</strong> Working on the D3.js visualization
-      and HTML structure.
-    </li>
-    <li>
-      <strong>Armando:</strong> Working on the D3.js visualization
-      and CSS styling.
-    </li>
-  </ul>
+<p>
+  We also retrieved California's geographic boundary and used it to
+  generate a grid of geographic cells covering the state. Each cell
+  was associated with its temperature values across the available
+  years and scenarios. Finally, we exported the processed data into
+  a JSON file.
+</p>
 
-  <h3>Development Time and Resources</h3>
+<h3>Team Contributions</h3>
 
-  <p>
-    We spent approximately 10 total person-hours developing the
-    application. The most time-consuming part was implementing the
-    interactive elements of the D3.js visualization. We consulted
-    online documentation and used large language models (LLMs)
-    to help resolve questions during development.
-  </p>
+<ul>
+  <li>
+    <strong>Ashwin:</strong> Worked on retrieving the climate data
+    and implementing the D3.js visualization. This included working
+    with the dataset and helping develop the geographic heatmap.
+  </li>
+
+  <li>
+    <strong>Hitarth:</strong> Worked on the D3.js visualization and
+    HTML structure, including the webpage layout and the elements
+    used to interact with the map.
+  </li>
+
+  <li>
+    <strong>Armando:</strong> Worked on the D3.js visualization and
+    CSS styling, helping develop the appearance and layout of
+    the application.
+  </li>
+</ul>
+
+<h3>Development Time and Resources</h3>
+
+<p>
+  We spent approximately 10 total person-hours developing the
+  application. The most time-consuming part of development was
+  implementing the interactive elements of the D3.js visualization.
+  We consulted online documentation and used large language models
+  (LLMs) to clarify unfamiliar concepts and resolve implementation
+  questions. We also used the Live Server extension in Visual
+  Studio Code to run and test the application locally during
+  development.
+</p>
+
 </section>
 
     <footer>CMIP6 · GFDL-ESM4 · Annual mean temperature (°C)</footer>
